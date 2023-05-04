@@ -1,0 +1,80 @@
+@import 'fonts';
+@import 'variables';
+@import 'functions';
+@import 'utilities';
+
+//Rest css
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: $font-family-vazir;
+    line-height: 1.6;
+    background-color: $dark-color;
+}
+
+a {
+    text-decoration: none;
+    color: $dark-color;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    width: 100%;
+}
+
+//Navbar
+#main-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1rem;
+
+    ul {
+        display: flex;
+    }
+
+    li {
+        padding: 1rem 1.5rem;
+
+        a {
+            color: #fff;
+            border-bottom: 3px transparent solid;
+            padding-bottom: 0.5rem;
+            @include transition(border-color, 0.5s);
+
+            &:hover {
+                border-color: $medium-color;
+            }
+
+            &.active {
+                border-color: $primary-color;
+
+            }
+        }
+    }
+}
+
+#header {
+    &-home {
+        background: linear-gradient(rgba(20, 20, 20, 0.5), rgba(20, 20, 20, 0.5)), url('../../images/development.jpg') no-repeat center center/cover;
+        height: 100vh;
+        color: #fff;
+
+        .header-content {
+            text-align: center;
+            padding-top: 10%;
+
+            h1 {
+                font-size: 3rem;
+            }
+        }
+    }
+
+
+}
