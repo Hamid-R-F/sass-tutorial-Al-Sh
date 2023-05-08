@@ -9,6 +9,17 @@
     color: $primary-color;
 }
 
+.text-center {
+    text-align: center;
+}
+
+.bottom-line {
+    width: 3rem;
+    height: 2px;
+    background-color: $primary-color;
+    margin: 0 auto 1rem auto;
+}
+
 //btn
 %btn-shared {
     display: inline-block;

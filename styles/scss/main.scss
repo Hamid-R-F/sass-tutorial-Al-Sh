@@ -12,7 +12,6 @@
 body {
     font-family: $font-family-vazir;
     line-height: 1.6;
-    background-color: $dark-color;
 }
 
 a {
@@ -75,6 +74,53 @@ img {
             }
         }
     }
+}
 
+#home {
+    &-1 {
+        .items {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1rem;
+            margin-top: 3rem;
 
+            .fas {
+                color: $primary-color;
+            }
+        }
+    }
+
+    &-2 {
+        .items {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+
+            li {
+                line-height: 2;
+
+                &.items-title {
+                    font-size: 1.5rem;
+                }
+
+                &.items-number {
+                    font-size: 2rem;
+                    font-weight: bold;
+                }
+            }
+
+            div {
+                padding: 3rem 0;
+
+                &:nth-child(odd) {
+                    background-color: $primary-color;
+                    color: #fff;
+                }
+
+                &:nth-child(even) {
+                    background-color: $light-color;
+                }
+            }
+
+        }
+    }
 }
