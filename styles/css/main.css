@@ -16,6 +16,17 @@
   color: #4834d4;
 }
 
+.text-center {
+  text-align: center;
+}
+
+.bottom-line {
+  width: 3rem;
+  height: 2px;
+  background-color: #4834d4;
+  margin: 0 auto 1rem auto;
+}
+
 .btn-light {
   display: inline-block;
   padding: 0.8rem 2rem;
@@ -71,7 +82,6 @@ a[class^=btn-]:hover {
 body {
   font-family: "Vazir";
   line-height: 1.6;
-  background-color: #333;
 }
 
 a {
@@ -126,6 +136,40 @@ img {
 }
 #header-home .header-content h1 {
   font-size: 3rem;
+}
+
+#home-1 .items {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  margin-top: 3rem;
+}
+#home-1 .items .fas {
+  color: #4834d4;
+}
+#home-2 .items {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+#home-2 .items li {
+  line-height: 2;
+}
+#home-2 .items li.items-title {
+  font-size: 1.5rem;
+}
+#home-2 .items li.items-number {
+  font-size: 2rem;
+  font-weight: bold;
+}
+#home-2 .items div {
+  padding: 3rem 0;
+}
+#home-2 .items div:nth-child(odd) {
+  background-color: #4834d4;
+  color: #fff;
+}
+#home-2 .items div:nth-child(even) {
+  background-color: #f4f4f4;
 }
 
 /*# sourceMappingURL=main.css.map */
